@@ -1,10 +1,13 @@
 local db = require("dashboard")
+local ayu = require("ayu")
+local ayudark = require('lualine.themes.ayu_dark')
+
 require('barbecue').setup {
 	theme = 'tokyonight',
 }
 require('lualine').setup {
   options = {
-    theme = 'tokyonight'
+    theme = ayudark 
   }
 }
 
@@ -33,6 +36,11 @@ db.setup({
   }
 })
 
+
+ayu.setup({
+	mirage = false,
+	overrides = {}
+})
 
 require("tokyonight").setup({
 	-- your configuration comes here
@@ -70,4 +78,4 @@ require("tokyonight").setup({
 	on_highlights = function(highlights, colors) end,
 })
 
-vim.cmd.colorscheme "tokyonight-night"
+vim.cmd.colorscheme "ayu-dark"

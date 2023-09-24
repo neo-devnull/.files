@@ -18,7 +18,11 @@ return require('packer').startup(function(use)
 	use "pangloss/vim-javascript"
 	use "leafgarland/typescript-vim"
 	use "MaxMEllon/vim-jsx-pretty"
+	use "sindrets/diffview.nvim"
+	use "dikiaap/minimalist"
+	use "Shatur/neovim-ayu"
 	use {'neoclide/coc.nvim', branch = 'release'}
+	use "NeogitOrg/neogit"
 	use {
 		"utilyre/barbecue.nvim",
 		requires = {
