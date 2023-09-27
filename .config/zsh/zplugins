@@ -1,0 +1,18 @@
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+laggardkernel/git-ignore
+michaelxmcbride/zsh-dircycle
+sineto/vi-mode
+sineto/web-search
+brymck/print-alias
+aubreypwd/zsh-plugin-reload
+idadzie/zsh-presenter-mode
+
+
+# sindresorhus/pure
+romkatv/powerlevel10k
+
+$ZDOTDIR/envars
+$ZDOTDIR/aliases
+$ZDOTDIR/plugins/prompt/

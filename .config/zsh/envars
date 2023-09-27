@@ -1,0 +1,7 @@
+export RIPGREP_CONFIG_PATH="$HOME/.config/ripgrep/ripgreprc"
+export PATH="$PATH:~/.dotnet/tools"
+export OPENAI_API_KEY=""
+export FZF_DEFAULT_COMMAND='rg --files'
+export PYENV_ROOT="$HOME/.pyenv"
+export KITTY_CONFIG_DIRECTORY="/home/neo/.config/kitty/"
+export MYVIMRC='/home/neo/.config/nvim/init.lua'
