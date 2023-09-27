@@ -1,9 +1,11 @@
 require('plugins')
-require("lsp")
+require('treesitter')
+require("langserver")
 require("coc")
+require('basic')
 require("ngit")
-require("other")
 require("theme")
+
 vim.cmd('set nu')
 vim.cmd('set tabstop=4')
 vim.cmd('set softtabstop=4')

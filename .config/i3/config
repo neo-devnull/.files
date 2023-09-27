@@ -175,7 +175,7 @@ bindsym $mod+Print exec flameshot gui
 bindsym Print exec flameshot full --clipboard
 
 # start a terminal
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+q kill

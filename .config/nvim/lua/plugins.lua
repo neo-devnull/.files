@@ -1,40 +1,37 @@
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
-	use 'neovim/nvim-lspconfig'
-	use 'glepnir/dashboard-nvim'
-	use 'Vimjas/vim-python-pep8-indent'
 	use 'ibhagwan/fzf-lua'
+	use 'neovim/nvim-lspconfig'
+	use 'nvimdev/lspsaga.nvim'
+	use "williamboman/mason.nvim"
+	use {'neoclide/coc.nvim', branch = 'release'}
+
+	use 'nvim-treesitter/nvim-treesitter'
+	use 'glepnir/dashboard-nvim'
+	
+	use 'numToStr/Comment.nvim'
 	use 'kylechui/nvim-surround'
-	use	'windwp/nvim-autopairs'
-	use 'jackMort/ChatGPT.nvim'
+	use  'windwp/nvim-autopairs'
+	use 'lukas-reineke/indent-blankline.nvim'
+
+	use "NeogitOrg/neogit"
 	use "MunifTanjim/nui.nvim"
 	use "nvim-lua/plenary.nvim"
 	use	"nacro90/numb.nvim"
-	use "rktjmp/paperplanes.nvim"
 	use "nvim-telescope/telescope.nvim"
+
+	use "rktjmp/paperplanes.nvim"
+	use "sindrets/diffview.nvim"
+	use 'Vimjas/vim-python-pep8-indent'
+	
+	use { "catppuccin/nvim", as = "catppuccin" }
+	use "Shatur/neovim-ayu"
 	use "ellisonleao/gruvbox.nvim"
 	use "folke/tokyonight.nvim"
-	use "ray-x/starry.nvim"
-	use "pangloss/vim-javascript"
-	use "leafgarland/typescript-vim"
-	use "MaxMEllon/vim-jsx-pretty"
-	use "sindrets/diffview.nvim"
-	use "dikiaap/minimalist"
-	use "Shatur/neovim-ayu"
-	use {'neoclide/coc.nvim', branch = 'release'}
-	use "NeogitOrg/neogit"
-	use {
-		"utilyre/barbecue.nvim",
-		requires = {
-			"SmiteshP/nvim-navic",
-			"nvim-tree/nvim-web-devicons"
-		}
-	}
-	use {
-		"nvim-lualine/lualine.nvim",
-		requires = { "nvim-tree/nvim-web-devicons", opt = true }
-	}
+	use" nvim-tree-web-devicons"
+	use "SmiteshP/nvim-navic"
+	use "utilyre/barbecue.nvim"
+	use "nvim-lualine/lualine.nvim"
 	use "yorickpeterse/nvim-window"
 	use "andweeb/presence.nvim"
-	use { "catppuccin/nvim", as = "catppuccin" }
 end)
