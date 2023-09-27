@@ -13,6 +13,5 @@ idadzie/zsh-presenter-mode
 # sindresorhus/pure
 romkatv/powerlevel10k
 
-$ZDOTDIR/envars
 $ZDOTDIR/aliases
 $ZDOTDIR/plugins/prompt/
