@@ -1,0 +1,54 @@
+{
+  "parser-directories": [
+    "/home/neo/src/treesitter-parsers/"
+  ],
+  "theme": {
+    "comment": {
+      "color": 245,
+      "italic": true
+    },
+    "embedded": null,
+    "function.builtin": {
+      "bold": true,
+      "color": 26
+    },
+    "string.special": 30,
+    "variable.parameter": {
+      "underline": true
+    },
+    "operator": {
+      "bold": true,
+      "color": 239
+    },
+    "type.builtin": {
+      "color": 23,
+      "bold": true
+    },
+    "punctuation.delimiter": 239,
+    "property": 124,
+    "keyword": 56,
+    "constructor": 136,
+    "tag": 18,
+    "module": 136,
+    "constant": 94,
+    "function": 26,
+    "number": {
+      "color": 94,
+      "bold": true
+    },
+    "attribute": {
+      "italic": true,
+      "color": 124
+    },
+    "punctuation.bracket": 239,
+    "string": 28,
+    "variable.builtin": {
+      "bold": true
+    },
+    "type": 23,
+    "constant.builtin": {
+      "color": 94,
+      "bold": true
+    }
+  }
+}
