@@ -1,23 +1,25 @@
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'ibhagwan/fzf-lua'
+	use "williamboman/mason.nvim"
+	use "williamboman/mason-lspconfig.nvim"
 	use 'neovim/nvim-lspconfig'
 	use 'nvimdev/lspsaga.nvim'
-	use "williamboman/mason.nvim"
 	use {'neoclide/coc.nvim', branch = 'release'}
 
 	use 'nvim-treesitter/nvim-treesitter'
+	use 'nvim-treesitter/playground'
+	use 'MDeiml/tree-sitter-markdown'
 	use 'glepnir/dashboard-nvim'
 	
 	use 'numToStr/Comment.nvim'
 	use 'kylechui/nvim-surround'
-	use  'windwp/nvim-autopairs'
-	use 'lukas-reineke/indent-blankline.nvim'
+	use 'windwp/nvim-autopairs'
 
 	use "NeogitOrg/neogit"
 	use "MunifTanjim/nui.nvim"
 	use "nvim-lua/plenary.nvim"
-	use	"nacro90/numb.nvim"
+	use "nacro90/numb.nvim"
 	use "nvim-telescope/telescope.nvim"
 
 	use "rktjmp/paperplanes.nvim"
