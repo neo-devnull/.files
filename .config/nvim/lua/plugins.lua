@@ -1,11 +1,18 @@
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'ibhagwan/fzf-lua'
+
 	use "williamboman/mason.nvim"
 	use "williamboman/mason-lspconfig.nvim"
 	use 'neovim/nvim-lspconfig'
 	use 'nvimdev/lspsaga.nvim'
-	use {'neoclide/coc.nvim', branch = 'release'}
+	
+	use 'ms-jpq/coq_nvim'
+	use 'ms-jpq/coq.artifacts'
+	use {
+		'ms-jpq/coq.thirdparty',
+		branch = '3p'
+	}
 
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'nvim-treesitter/playground'
@@ -16,7 +23,6 @@ return require('packer').startup(function(use)
 	use 'kylechui/nvim-surround'
 	use 'windwp/nvim-autopairs'
 
-	use "NeogitOrg/neogit"
 	use "MunifTanjim/nui.nvim"
 	use "nvim-lua/plenary.nvim"
 	use "nacro90/numb.nvim"

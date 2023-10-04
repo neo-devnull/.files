@@ -2,11 +2,9 @@ vim.g.loaded_netrwPlugin = 1
 vim.g.loaded_netrw = 1
 
 require('plugins')
-require('treesitter')
+-- require('treesitter')
 require("langserver")
-require("coc")
 require('basic')
-require("ngit")
 require("theme")
 require("discord")
 
