@@ -10,7 +10,8 @@ return {
 	},
 	{ 'nanozuki/tabby.nvim' , enabled = false},
 	{ 'nvim-treesitter/nvim-treesitter' },
-
+    
+    { 'stevearc/dressing.nvim' },
     { '2KAbhishek/nerdy.nvim' },
 	{ 'glepnir/dashboard-nvim' },
 	{ 'numToStr/Comment.nvim' },

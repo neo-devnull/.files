@@ -9,7 +9,3 @@ masonlspconfig.setup()
 lspconfig.pyright.setup(coq.lsp_ensure_capabilities())
 lspconfig.tsserver.setup(coq.lsp_ensure_capabilities())
 lspconfig.lua_ls.setup(coq.lsp_ensure_capabilities())
-
-vim.api.nvim_create_autocmd({'VimEnter',}, {
-	command = "COQnow -s"
-})

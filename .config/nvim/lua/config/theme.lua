@@ -17,22 +17,34 @@ db.setup({
     header = ascii.cm3,
     center = {
       {
-        icon = ' ',
+        icon = ' ',
         icon_hl = 'Title',
-        desc = 'Restore Session           ',
-        desc_hl = 'String',
-        key_hl = 'Number',
+        desc = 'Restore Session',
         action = function() require("persistence").load({last=true}) end, 
       },
       {
-        icon = '',
+        icon = ' ',
+        icon_hl = 'Title',
         desc = 'Configure nvim',
-        action = function() tscope.tsfindfiles('/home/neo/.config/nvim/') end,
+        action = function()
+                 tscope.tsfindfiles('/home/neo/.config/nvim/')
+                 vim.cmd('cd /home/neo/.config/nvim/')
+                 end,
       },
       {
-        icon = ' ',
+        icon = ' ',
+        icon_hl = 'Title',
         desc = 'Configure zsh',
-        action = function() tscope.tsfindfiles('/home/neo/.config/zsh/') end,
+        action = function()
+                 tscope.tsfindfiles('/home/neo/.config/zsh/')
+                 vim.cmd('cd /home/neo/.config/zsh/')
+                 end,
+      },
+      {
+        icon = ' ',
+        icon_hl = 'Title',
+        desc = 'Manage dotfiles',
+        action = function() tscope.tsmanagecfg() end,
       },
     },
   }
@@ -44,6 +56,4 @@ db.setup({
 onemono.setup({
 	transparent = false
 })
--- vim.cmd.colorscheme "gruvbox"
--- vim.cmd.colorscheme "one_monokai"
 vim.cmd.colorscheme "molokai"
