@@ -1,5 +1,8 @@
 local db = require("dashboard")
 local onemono = require("one_monokai")
+local bufferline = require("bufferline")
+local ascii = require('config.ascii')
+local tscope = require('config.telescope')
 
 require('lualine').setup {
   options = {
@@ -7,30 +10,35 @@ require('lualine').setup {
   }
 }
 
+
 db.setup({
   theme = 'doom',
   config = {
+    header = ascii.cm3,
     center = {
       {
         icon = ' ',
         icon_hl = 'Title',
-        desc = 'Find File           ',
+        desc = 'Restore Session           ',
         desc_hl = 'String',
-        key = 'b',
-        keymap = 'SPC f f',
         key_hl = 'Number',
-        action = 'lua print(2)'
+        action = function() require("persistence").load({last=true}) end, 
+      },
+      {
+        icon = '',
+        desc = 'Configure nvim',
+        action = function() tscope.tsfindfiles('/home/neo/.config/nvim/') end,
       },
       {
         icon = ' ',
-        desc = 'Find Dotfiles',
-        key = 'f',
-        keymap = 'SPC f d',
-        action = 'lua print(3)'
+        desc = 'Configure zsh',
+        action = function() tscope.tsfindfiles('/home/neo/.config/zsh/') end,
       },
     },
   }
 })
+
+
 
 
 onemono.setup({
@@ -39,4 +47,3 @@ onemono.setup({
 -- vim.cmd.colorscheme "gruvbox"
 -- vim.cmd.colorscheme "one_monokai"
 vim.cmd.colorscheme "molokai"
-vim.o.showtabline = 2
