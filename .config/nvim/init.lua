@@ -1,2 +1,2 @@
-require('lazyinit')
-require('config')
+require("lazyinit")
+require("config")
