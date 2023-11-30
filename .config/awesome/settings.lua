@@ -13,7 +13,7 @@ settings.chosen_theme = settings.themes[3] -- replace number inside of [] with a
 
 settings.enableTitlebar = false -- Set to true if you wish to have title bars on top of applications (i.e to have buttons: close, minimise, etc )
 
-settings.gapsize = 20 -- set your gap size here
+settings.gapsize = 10 -- set your gap size here
 
 settings.focusOnHover = true -- set to false if you don't want the window to focused on mouse hover
 
@@ -23,7 +23,7 @@ settings.focusOnHover = true -- set to false if you don't want the window to foc
 settings.useNitrogen = true -- Set this to true for nitrogen to do your wallpaper (if you want to use the theme's default wallpaper set this to false)
 
 -- Required Package: picom
-settings.usePicom = true -- Set this to true if you want picom to launch on startup
+settings.usePicom = false -- Set this to true if you want picom to launch on startup
 
 -- Requires network manager
 settings.useNMApplet = true -- If you have network manager installed, you can use manage your network (i.e connect to wifi) from the system tray icon
@@ -39,4 +39,3 @@ settings.useFlameShot = true -- If you want flameshot (screenshotting tool) to a
 settings.weatherID = 2643743 -- Set this to your own weather ID
 
 return settings
-

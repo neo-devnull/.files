@@ -354,8 +354,12 @@ globalkeys = my_table.join(
 		awful.layout.inc(1)
 	end, { description = "select next", group = "layout" }),
 
-	awful.key({ modkey }, "`", function()
-		awful.util.spawn("rofi -show")
+	awful.key({ modkey }, "d", function()
+		awful.util.spawn("rofi -show drun")
+	end, { description = "Run Rofi", group = "launcher" }),
+
+	awful.key({ modkey }, "Print", function()
+		awful.util.spawn("flameshot full --clipboard")
 	end, { description = "Run Rofi", group = "launcher" }),
 
 	awful.key({ modkey, "Control" }, "n", function()
